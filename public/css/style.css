@@ -1,0 +1,43 @@
+html, body {
+    color: #212121;
+    background: Honeydew;
+    font-size: 18px;    
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited{
+    color: DarkRed;
+}
+
+a:hover {
+    color: Crimson;
+    border-bottom: 2px solid Crimson;
+    
+}
+
+header{
+    padding: 20px;
+    border-bottom: 1px dotted Crimson;
+}
+
+header ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+footer{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
