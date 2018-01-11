@@ -3,8 +3,7 @@ const hbs = require('hbs'); // handlebars view engine
 const fs = require('fs');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-console.log(this);
+const port = process.env.PORT || 3000;
 
 app.locals.title = "Teste com Express";
 
@@ -61,6 +60,6 @@ app.get("/bad", (req, res) => {
     res.send("<h1 style='color:red'>Unable to reach the page");
 });
 
-app.listen(PORT, () => {
-    console.log("App is listen on port " + PORT);
+app.listen(port, () => {
+    console.log("App is listen on port " + port);
 });
