@@ -3,9 +3,9 @@ const hbs = require('hbs'); // handlebars view engine
 const fs = require('fs');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
-app.locals.title = "Teste com Express";
+app.locals.title = "Express Test";
 
 // handlebars partials & helpers
 hbs.registerPartials(__dirname + '/views/partials');
@@ -53,6 +53,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
